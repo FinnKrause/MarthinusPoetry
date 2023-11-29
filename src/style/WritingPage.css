@@ -1,0 +1,28 @@
+.Poem {
+    width: fit-content;
+
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: var(--background-color-light);
+}
+
+.Poem p {
+    font-family: 'Baskervville', serif;
+    line-height: 1.5;
+    color: var(--text-color)
+}
+
+.WritingPage {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.WritingContent {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 100%;
+}
