@@ -6,7 +6,6 @@
     /* height: 300vh; */
     width: 100%;
     place-items: center;
-
     margin-top: 50px;
 }
 
@@ -18,13 +17,11 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
-
 }
 
 .MEpic {
     width: 50%;
     height: 100%;
-
     display: flex;
     justify-content: center;
     place-items: center;
@@ -35,7 +32,6 @@
     border-radius: 20px;
     width: 80%;
     aspect-ratio: auto;
-
 }
 
 .MEdesc {

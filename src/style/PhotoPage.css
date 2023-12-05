@@ -1,6 +1,6 @@
 .PhotoContent {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     row-gap: 20px;
     display: grid;
     margin-top: 50px;
@@ -12,5 +12,5 @@
 .PhotoContent img {
     border-radius: 10px;
     aspect-ratio: auto;
-    width: 90%;
+    width: 70%;
 }
