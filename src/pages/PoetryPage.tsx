@@ -94,7 +94,7 @@ const PoetryPage:React.FC<PoetryPageProps> = ():JSX.Element => {
 
     return <div className="PoetryPage">
         <NavBar></NavBar>
-        <div className="PoetryContent">
+        <div className="PoetryContent content">
             {poems.map(i => <Poem poem={i}></Poem>)}
         </div>
     </div>

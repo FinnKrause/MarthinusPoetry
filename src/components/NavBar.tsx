@@ -4,13 +4,15 @@ import Hamburger from "./Hamburger";
 import CloseX from "./CloseX";
 import moon from "../assets/moon.png";
 import brightness from "../assets/brightness.png";
+import DonoButton from "./DonoButton";
 
 
 
 interface NavBarProps {
+    fadeIn?: boolean;
 }
 
-const NavBar:React.FC<NavBarProps> = ():JSX.Element => {
+const NavBar:React.FC<NavBarProps> = (Props):JSX.Element => {
     
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [light, setLight] = useState<boolean>(() => localStorage.getItem("theme") === "light");
@@ -32,17 +34,17 @@ const NavBar:React.FC<NavBarProps> = ():JSX.Element => {
         setLight(islight);
     }
 
-    return <nav id="NavBar">
+    return <nav id="NavBar" style={{animation: (Props.fadeIn ? "fadeIn 1s linear 1s forwards" : ""), opacity: (Props.fadeIn ? 0 : 1)}}>
         {menuOpen && <div className="OpenNav">
             <div className="closeX">
             <CloseX setOpen={() => setMenuOpen(false)}></CloseX>
             </div>
             <div className="NavBarContent">
-                <button onClick={() => {document.location = 'Donation';}}>Donation</button>
-                <button onClick={() => {document.location = 'Poetry';}}>Poetry</button>
-                <button onClick={() => {document.location = 'Writing';}}>Writing</button>
-                <button onClick={() => {document.location = 'Photography';}}>Photography</button>
-                <button onClick={() => {document.location = 'Instagram';}}>Instagram</button>
+                <button onClick={() => {document.location = 'poetry';}}>Poetry</button>
+                <button onClick={() => {document.location = 'writing';}}>Writing</button>
+                <button onClick={() => {document.location = 'photography';}}>Photography</button>
+                <button onClick={() => {window.open("https://instagram.com/violet_necrosis/")}}>Instagram</button>
+                <button onClick={() => {document.location = 'donation';}}>Donation</button>
             </div>
             
 
@@ -58,6 +60,7 @@ const NavBar:React.FC<NavBarProps> = ():JSX.Element => {
                 <h1 className="Title" onClick={() => document.location="/"}>Violet Poetry</h1>
             </div>
             <div className="right">
+                <DonoButton withoutText></DonoButton>
                 {light && <img className="DarkLight ThemeSwitch" src={moon} onClick={() => updateTheme(false)}></img>}
                 {!light && <img className="DarkLight ThemeSwitch" src={brightness} onClick={() => updateTheme(true)}></img>}
             </div>

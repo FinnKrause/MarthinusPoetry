@@ -5,6 +5,7 @@
     height: 50px;
     width: 100%;
     background-color: transparent;
+    z-index: 5;
 }
 
 .OpenNav {
@@ -70,9 +71,11 @@
     color: var(--text-color);
     font-size: 50px;
     font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 5px var(--text-color);
 }
 
 .ThemeSwitch {
+    transition: .2s all linear;
     margin-right: 10px;
 }
 
@@ -88,4 +91,8 @@
 .DarkLight {
     height: 35px;
     width: 35px;
+}
+
+.ThemeSwitch:hover {
+    transform: scale(1.1);
 }
