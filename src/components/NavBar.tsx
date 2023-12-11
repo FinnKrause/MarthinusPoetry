@@ -24,8 +24,8 @@ const NavBar:React.FC<NavBarProps> = (Props):JSX.Element => {
             document.body.style.setProperty("--background-color-light", "#f5f5f4");
         } else {
             document.body.style.setProperty("--text-color", "white");
-            document.body.style.setProperty("--background-color", "#252627");
-            document.body.style.setProperty("--background-color-light", "#363739");
+            document.body.style.setProperty("--background-color", "#363739");
+            document.body.style.setProperty("--background-color-light", "#252627");
         }
     }, [light])
 
@@ -44,7 +44,8 @@ const NavBar:React.FC<NavBarProps> = (Props):JSX.Element => {
                 <button onClick={() => {document.location = 'writing';}}>Writing</button>
                 <button onClick={() => {document.location = 'photography';}}>Photography</button>
                 <button onClick={() => {window.open("https://instagram.com/violet_necrosis/")}}>Instagram</button>
-                <button onClick={() => {document.location = 'donation';}}>Donation</button>
+                <button onClick={() => {window.open("https://paypal.com/")}}>Donation</button>
+                {/* <button onClick={() => {document.location = 'donation';}}>Donation</button> */}
             </div>
             
 

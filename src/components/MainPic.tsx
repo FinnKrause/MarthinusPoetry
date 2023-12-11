@@ -1,5 +1,5 @@
 import "../style/MainPic.css";
-import Pic from "../assets/skull_placeholder-removebg-preview.png"
+import Pic from "../assets/Vanitas2.png"
 
 
 interface MainPicProps {
