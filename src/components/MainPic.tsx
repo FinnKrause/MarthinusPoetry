@@ -1,5 +1,5 @@
 import "../style/MainPic.css";
-import Pic from "../assets/Vanitas2.png"
+import Pic from "../assets/Vanitas2.1.png"
 
 
 interface MainPicProps {
