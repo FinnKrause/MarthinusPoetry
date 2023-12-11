@@ -27,18 +27,21 @@
     display: flex;
     justify-content: left;
     place-items: center;
+    flex: 1;
 }
 
 .right {
     display: flex;
     justify-content: right;
     place-items: center;
+    flex: 1;
 }
 
 .center {
     display: flex;
     justify-content: center;
     place-items: center;
+    flex: 2;
 }
 
 .ClosedNav div{

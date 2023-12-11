@@ -27,3 +27,9 @@
     margin-top: 50px;
     grid-template-columns: 50% 50%;
 }
+
+@media all and (max-width: 700px) {
+    .PoetryContent {
+        grid-template-columns: 100%;
+    }
+}

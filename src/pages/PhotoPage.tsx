@@ -21,16 +21,16 @@ const PhotoPage:React.FC<PhotoPageProps> = ():JSX.Element => {
     return <div className="PhotoPage">
         <NavBar></NavBar>
         <div className="PhotoContent">
-        <img src={img1}></img>
-        <img src={img2}></img>
-        <img src={img3}></img>
-        <img src={img4}></img>
-        <img src={img5}></img>
-        <img src={img6}></img>
-        <img src={img7}></img>
-        <img src={img8}></img>
-        <img src={img9}></img>
-        <img src={img10}></img>
+        <img src={img1} loading="lazy"></img>
+        <img src={img2} loading="lazy"></img>
+        <img src={img3} loading="lazy"></img>
+        <img src={img4} loading="lazy"></img>
+        <img src={img5} loading="lazy"></img>
+        <img src={img6} loading="lazy"></img>
+        <img src={img7} loading="lazy"></img>
+        <img src={img8} loading="lazy"></img>
+        <img src={img9} loading="lazy"></img>
+        <img src={img10} loading="lazy"></img>
         </div>
     </div>
 }

@@ -14,3 +14,9 @@
     aspect-ratio: auto;
     width: 70%;
 }
+
+@media all and (max-width: 1000px) {
+    .PhotoContent {
+        grid-template-columns: 100%;
+    }
+}
