@@ -47,8 +47,6 @@ const NavBar:React.FC<NavBarProps> = (Props):JSX.Element => {
                 <button onClick={() => {window.open("https://paypal.com/")}}>Donation</button>
                 {/* <button onClick={() => {document.location = 'donation';}}>Donation</button> */}
             </div>
-            
-
         </div>}
 
         <div className="ClosedNav">

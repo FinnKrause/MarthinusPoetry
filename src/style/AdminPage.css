@@ -1,0 +1,24 @@
+.AdminPage {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.TypeSelection {
+    display: flex;
+}
+
+.RadioButton {
+    display: flex;
+}
+
+.RadioButton p {
+    color: var(--text-color)
+}
+
+.SubmitField {
+    min-height: 100px;
+    min-width: 100px;
+}

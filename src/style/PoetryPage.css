@@ -9,6 +9,10 @@
     z-index: 1;
 }
 
+.Paragraph {
+    margin-top: 20px;
+}
+
 .Poem p {
     font-family: 'Baskervville', serif;
     line-height: 1.5;
