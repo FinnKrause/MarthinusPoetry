@@ -15,7 +15,7 @@ const WritingPage:React.FC<WritingPageProps> = ():JSX.Element => {
     const [writing, setWriting] = useState<Array<Piece>>([[[]]]);
 
     useEffect(() => {
-        fetch("https://api.violetnecrosis.com/getWriting").then(res => res.json()).then(res => setWriting(res.data)).catch(console.error)
+        fetch("https://magnus.finnkrause.com/getWriting").then(res => res.json()).then(res => setWriting(res.data)).catch(console.error)
     }, [])
 
     return <div className="WritingPage">

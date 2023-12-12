@@ -21,7 +21,7 @@ const AdminPage:React.FC<AdminPageProps> = ():JSX.Element => {
             alert("No text! Schreib was rein du Huan!")
             return;
         }
-        fetch(`https://api.violetnecrosis.com/${poemCheck ? "addPoetry" : "addWriting"}`, 
+        fetch(`https://magnus.finnkrause.com/${poemCheck ? "addPoetry" : "addWriting"}`, 
         {method: "POST", body: JSON.stringify(text.split("\n\n").map(i => i.split("\n")))})
         .then(console.log).catch(console.error)
     }

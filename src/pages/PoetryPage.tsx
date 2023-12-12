@@ -15,7 +15,7 @@ const PoetryPage:React.FC<PoetryPageProps> = ():JSX.Element => {
     const [poems, setPoems] = useState<Array<Poem>>([[[]]]);
 
     useEffect(() => {
-        fetch("https://api.violetnecrosis.com/getPoetry").then(res => res.json()).then(res => setPoems(res.data)).catch(console.error)
+        fetch("https://magnus.finnkrause.com/getPoetry").then(res => res.json()).then(res => setPoems(res.data)).catch(console.error)
     }, [])
 
     return <div className="PoetryPage">
