@@ -1,3 +1,4 @@
+import { URLS } from "../URLS";
 import "../style/DonoButton.css";
 
 
@@ -7,7 +8,7 @@ interface DonoButtonProps {
 
 const DonoButton:React.FC<DonoButtonProps> = (Props):JSX.Element => {
     return <div className={`DonoButton ${Props.withoutText && "withoutText"}`} onClick={() => {
-        window.open("https://paypal.com/")
+        window.open(URLS.Donation)
     }}>
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">

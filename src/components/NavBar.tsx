@@ -5,7 +5,7 @@ import CloseX from "./CloseX";
 import moon from "../assets/moon.png";
 import brightness from "../assets/brightness.png";
 import DonoButton from "./DonoButton";
-
+import { URLS } from "../URLS";
 
 
 interface NavBarProps {
@@ -43,8 +43,8 @@ const NavBar:React.FC<NavBarProps> = (Props):JSX.Element => {
                 <button onClick={() => {document.location = 'poetry';}}>Poetry</button>
                 <button onClick={() => {document.location = 'writing';}}>Writing</button>
                 <button onClick={() => {document.location = 'photography';}}>Photography</button>
-                <button onClick={() => {window.open("https://instagram.com/violet_necrosis/")}}>Instagram</button>
-                <button onClick={() => {window.open("https://paypal.com/")}}>Donation</button>
+                <button onClick={() => {window.open(URLS.Insta)}}>Instagram</button>
+                <button onClick={() => {window.open(URLS.Donation)}}>Donation</button>
                 {/* <button onClick={() => {document.location = 'donation';}}>Donation</button> */}
             </div>
         </div>}
